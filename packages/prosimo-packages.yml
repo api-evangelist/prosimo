@@ -1,0 +1,85 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  Terraform Registry (registry.terraform.io/providers/prosimo-io/prosimo) and
+  the prosimo-io GitHub organization (github.com/prosimo-io)
+notes: >-
+  Prosimo publishes no traditional language SDK (no npm/PyPI/Maven/NuGet/Go
+  module client library was found). Its programmatic surface is the first-party
+  Terraform provider, which is a Go client for the Prosimo control-plane API and
+  covers the full resource lifecycle. A Pulumi bridge repository and reusable
+  Terraform modules exist on GitHub but are not published to the Pulumi registry
+  (pulumi-prosimo is Terraform-bridge boilerplate) and the modules are marked
+  unsupported.
+packages:
+- language: hcl
+  registry: terraform
+  name: prosimo-io/prosimo
+  url: https://registry.terraform.io/providers/prosimo-io/prosimo/latest
+  source: https://github.com/prosimo-io/terraform-provider-prosimo
+  install: |
+    terraform {
+      required_providers {
+        prosimo = {
+          source  = "prosimo-io/prosimo"
+        }
+      }
+    }
+  version: 4.5.3
+  released: '2024-11-06'
+  downloads: 29800
+  official: true
+  kind: terraform-provider
+  language_impl: go
+  description: >-
+    Official Terraform provider maintained by the Prosimo engineering team for
+    full lifecycle management of Prosimo resources — cloud gateways, network and
+    application onboarding, namespaces, policies, IDP, security/WAF profiles,
+    and edge/transit configuration.
+  managed_resources:
+  - app_onboarding_web
+  - app_onboarding_fqdn
+  - app_onboarding_ip
+  - app_onboarding_cloudsvc
+  - app_onboarding_jumpbox
+  - app_onboarding_citrixvdi
+  - app_onboarding_dns
+  - network_onboarding
+  - cloud_creds
+  - cloud_gateway
+  - connector_placement
+  - edge
+  - namespace
+  - namespace_export
+  - policy
+  - grouping
+  - idp
+  - certificates
+  - waf
+  - managed_firewall
+  - firewall_manager
+  - dynamic_risk
+  - ip_reputation
+  - edr_integration
+  - edr_profile
+  - service_insertion
+  - shared_services
+  - private_link_source
+  - private_link_mapping
+  - internet_egress
+  - log_exporter
+  - visual_transit
+related_repositories:
+- name: pulumi-prosimo
+  url: https://github.com/prosimo-io/pulumi-prosimo
+  official: true
+  published: false
+  note: Pulumi Terraform-bridge boilerplate; not published to the Pulumi registry.
+- name: terraform-modules
+  url: https://github.com/prosimo-io/terraform-modules
+  official: true
+  note: Reusable Terraform modules and experiments; marked unsupported by Prosimo.
+- name: ProsimoLabs
+  url: https://github.com/prosimo-io/ProsimoLabs
+  official: true
+  note: Instruqt hands-on lab definitions (HCL).

@@ -1,0 +1,19 @@
+# Prosimo
+
+> Prosimo is a multi-cloud networking platform providing full-stack cloud transit, security, performance, observability, and cost management across AWS, Azure, Google Cloud, and Oracle Cloud. Its Application eXperience Infrastructure (AXI) ties network transit, micro-segmentation, zero-trust policy, WAF, and observability into an autonomous, ML-driven control plane. The control plane is consumed programmatically through a first-party Terraform provider rather than a public REST/OpenAPI developer surface. Industry sources report Prosimo was acquired by Palo Alto Networks; the marketing site remains live and the Terraform provider was last released in November 2024.
+
+## Company
+- [Website](https://prosimo.io/): Prosimo multi-cloud networking platform home
+- [Cloud Networking overview](https://prosimo.io/cloud-networking/): how modern applications stay connected
+- [Contact / Support](https://prosimo.io/contact/): contact form
+- [Privacy Policy](https://prosimo.io/privacy/)
+
+## Programmatic surface
+- [Terraform Provider (registry)](https://registry.terraform.io/providers/prosimo-io/prosimo/latest): official prosimo-io/prosimo provider, v4.5.3, full lifecycle management of Prosimo resources
+- [Terraform Provider docs](https://registry.terraform.io/providers/prosimo-io/prosimo/latest/docs): resource and data-source reference
+- [Terraform Provider source](https://github.com/prosimo-io/terraform-provider-prosimo): Go implementation, maintained by Prosimo engineering
+- [GitHub organization](https://github.com/prosimo-io): terraform-provider-prosimo, pulumi-prosimo, terraform-modules, ProsimoLabs, azureonboarding, Customer-demo-tf
+
+## Notes
+- Authentication to the Prosimo control plane uses a token generated from the Prosimo Dashboard, passed to the Terraform provider as static config or via environment variables.
+- No public OpenAPI/Swagger specification, no language SDK (npm/PyPI/Maven/NuGet/Go module), no /.well-known/ discovery documents, no llms.txt, and no security.txt were found on prosimo.io as of this profile.

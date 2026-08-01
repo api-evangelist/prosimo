@@ -1,22 +1,86 @@
 aid: prosimo
 name: Prosimo
-description: Prosimo is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Prosimo is a multi-cloud networking platform that gives enterprises a
+  full-stack cloud transit, security, performance, observability, and
+  cost-management layer across AWS, Azure, Google Cloud, and Oracle Cloud.
+  Its Application eXperience Infrastructure (AXI) abstracts cloud-provider
+  networking constructs and ties network transit, micro-segmentation,
+  zero-trust policy, WAF, and observability into an autonomous, ML-driven
+  control plane. Prosimo exposes that control plane programmatically through
+  a first-party Terraform provider (prosimo-io/prosimo) for full lifecycle
+  management of cloud gateways, network and application onboarding, policies,
+  namespaces, and security profiles; a companion Pulumi bridge repository and
+  reusable Terraform modules are published on GitHub. Prosimo was
+  venture-backed by General Catalyst, WRVI Capital, and BlackRock; industry
+  sources report it was subsequently acquired by Palo Alto Networks.
 url: https://raw.githubusercontent.com/api-evangelist/prosimo/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/prosimo-io
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-note: >-
+  Marketing site (prosimo.io) remains live; the Terraform provider was last
+  released v4.5.3 on 2024-11-06. Industry aggregators report acquisition by
+  Palo Alto Networks. No public REST/OpenAPI developer surface is published;
+  the control plane is consumed via the Terraform provider and dashboard
+  token.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Cloud Networking
+- Multi-Cloud
+- Networking
+- Zero Trust
+- Security
+- Infrastructure as Code
+- Terraform
+- Cloud Transit
+- Observability
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
+common:
+- type: Website
+  url: https://prosimo.io/
+- type: PrivacyPolicy
+  url: https://prosimo.io/privacy/
+- type: Support
+  url: https://prosimo.io/contact/
+- type: GitHubOrganization
+  url: https://github.com/prosimo-io
+- type: Documentation
+  url: https://registry.terraform.io/providers/prosimo-io/prosimo/latest/docs
+- type: Packages
+  url: packages/prosimo-packages.yml
+- type: SDKs
+  url: packages/prosimo-packages.yml
+- type: LLMsTxt
+  url: llms/prosimo-llms.txt
+- type: DomainSecurity
+  url: security/prosimo-domain-security.yml
