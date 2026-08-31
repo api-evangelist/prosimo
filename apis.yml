@@ -77,6 +77,11 @@ x-enrichment:
   artifacts_added: 3
   pass: local-v1
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/palo-alto-networks/
+  name: Palo Alto Networks
+  x-relationship: acquired
+  x-evidence: "Prosimo was venture-backed by General Catalyst, WRVI Capital, and BlackRock; industry sources report it was subsequently acquired by Palo Alto Networks."
 - type: Website
   url: https://prosimo.io/
 - type: PrivacyPolicy
